@@ -1,0 +1,59 @@
+.sobre-mim {
+	background-color: var(--bg-2);
+}
+
+.sobre-mim .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	gap: 140px;
+}
+
+.sobre-mim h1 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 44px;
+	line-height: 44px;
+	color: var(--white);
+	margin-top: 140px;
+	margin-bottom: 30px;
+}
+
+.sobre-mim p {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 36px;
+	color: var(--gray);
+	margin-bottom: 60px;
+}
+
+.imagem-perfil {
+	margin-top: 140px;
+	margin-bottom: 60px;
+}
+
+.imagem-perfil img {
+	max-width: 100%;
+	border-radius: 4px;
+	object-fit: contain;
+	object-position: right;
+}
+
+@media (max-width: 900px) {
+	.imagem-perfil {
+		max-width: 450px;
+	}
+}
+
+@media (max-width: 600px) {
+	.sobre-mim .container {
+		grid-template-columns: 1fr;
+	}
+
+	.imagem-perfil {
+		max-width: 400px;
+	}
+}

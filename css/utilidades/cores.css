@@ -1,0 +1,21 @@
+:root {
+	--bg-1: #F4F4F4;
+	--bg-2: #131313;
+	--bg-3: #000000;
+	--white: #FFFFFF;
+	--gray: #BBBBBB;
+	--green: #04e499;
+}
+
+
+.bg_white {
+	background: var(--bg-1);
+}
+
+.bg_black1 {
+	background: var(--bg-2);
+}
+
+.bg_black2 {
+	background: var(--bg-3);
+}

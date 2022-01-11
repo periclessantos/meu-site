@@ -1,0 +1,19 @@
+.botao {
+	background: var(--green);
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #011F0F;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 36px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.botao:hover {
+	background-color: #27995B;
+}
