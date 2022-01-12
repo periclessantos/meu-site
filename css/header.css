@@ -45,6 +45,7 @@
 .aba-menu-mobile {
 	display: none;
 	transition: height 0.3s;
+	overflow: hidden;
 	height: 0px;
 }
 

@@ -1,106 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Péricles Santos - Dev Front end & UI/UX Designer</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Péricles Santos</title>
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap"
-		rel="stylesheet" />
-</head>
+	<body class="bg_white">
+		<header class="header">
+			<div class="container">
+				<a href="index.html"><img src="img/logo.svg" /></a>
 
-<body>
-	<header class="header bg_black">
-		<div class="container">
-			<a href="index.html"><img src="img/logo.svg" /></a>
+				<nav>
+					<ul class="header-menu">
+						<li><a href="#sobre-mim">Sobre Mim</a></li>
+						<li><a href="#formacao">Formação</a></li>
+						<li><a href="#portfolio">Portfólio</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
 
-			<nav>
-				<ul class="header-menu">
-					<li><a href="/">Sobre Mim</a></li>
-					<li><a href="/">Formação</a></li>
-					<li><a href="/">Portifólio</a></li>
-					<li><a href="/">Contato</a></li>
+					<a class="menu-mobile">
+						<img src="img/menu.svg" />
+					</a>
+				</nav>
+			</div>
+		</header>
+		<nav class="aba-menu-mobile container">
+			<ul>
+				<li><a href="#sobre-mim">Sobre Mim</a></li>
+				<li><a href="#formacao">Formação</a></li>
+				<li><a href="#portfolio">Portfólio</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+
+		<main class="sobre-mim" id="sobre-mim">
+			<div class="container">
+				<div class="conteudo">
+					<h1>Desenvolvedor Front End & UI/UX Designer</h1>
+
+					<p>
+						Olá, eu me chamo Péricles e sou Desenvolvedor Front end
+						& UI/UX Designer. Trabalho com as linguagens HTML, CSS e
+						Javascript.
+					</p>
+
+					<a class="botao" href="">Contacte-me</a>
+				</div>
+
+				<div class="imagem-perfil">
+					<img src="img/imagem-perfil.jpg" alt="Imagem de Perfil" />
+				</div>
+			</div>
+		</main>
+		<section class="formacao bg_white" id="formacao">
+			<div class="container">
+				<h2>Formação & Habilidades</h2>
+
+				<ul class="icones">
+					<li><img src="img/html.svg" /></li>
+					<li><img src="img/css.svg" /></li>
+					<li><img src="img/js.svg" /></li>
+					<li><img src="img/react.svg" /></li>
 				</ul>
 
-				<a class="menu-mobile">
-					<img src="img/menu.svg" />
-				</a>
-			</nav>
-		</div>
-	</header>
-	<nav class="aba-menu-mobile container">
-		<ul>
-			<li><a href="/">Sobre Mim</a></li>
-			<li><a href="/">Formação</a></li>
-			<li><a href="/">Portifólio</a></li>
-			<li><a href="/">Contato</a></li>
-		</ul>
-	</nav>
+				<ul class="cursos">
+					<li>
+						<span>Tecnológo</span>
 
-	<main class="sobre-mim">
-		<div class="container">
-			<div class="conteudo">
-				<h1>Desenvolvedor Front End & UI/UX Designer</h1>
+						<h3>Análise e Desenvolvimento de sistemas</h3>
 
-				<p>
-					Olá, eu me chamo Péricles e sou Desenvolvedor Front end
-					& UI/UX Designer. Trabalho com as linguagens HTML, CSS e
-					Javascript, também utilizo o figma, para projetar as
-					interfaces.
-				</p>
+						<span>2021-2023</span>
+					</li>
 
-				<a class="botao" href="">Contacte-me</a>
+					<li>
+						<span>Curso Livre</span>
+
+						<h3>Curso de UI/UX Design Avançado</h3>
+
+						<span>2022-2022</span>
+					</li>
+
+					<li>
+						<span>Curso Livre</span>
+
+						<h3>Curso de Javascript / ES6</h3>
+
+						<span>2022-2022</span>
+					</li>
+
+					<li>
+						<span>Curso Livre</span>
+
+						<h3>Curso de React</h3>
+
+						<span>2022-2023</span>
+					</li>
+				</ul>
 			</div>
+		</section>
 
-			<div class="imagem-perfil">
-				<img src="img/imagem-perfil.jpg" alt="Imagem de Perfil" />
+		<section class="portfolio bg_black1" id="portfolio">
+			<div class="container">
+				<h2>Portfólio</h2>
+
+				<div class="trabalho">
+					<div class="imagem-trabalho">
+						<img src="img/medland.jpg" />
+					</div>
+
+					<div class="conteudo-trabalho">
+						<h3>Medland</h3>
+
+						<p>
+							Landing page feita para que a empresa pudesse
+							disponibilizar a lista de exames e consultas que
+							realiza em sua clínica.
+						</p>
+					</div>
+				</div>
+
+				<div class="trabalho">
+					<div class="imagem-trabalho">
+						<img src="img/vitpetshop.jpg" />
+					</div>
+
+					<div class="conteudo-trabalho">
+						<h3>Vit PetShop</h3>
+
+						<p>
+							Site onde os clientes do pet shop podem ver a lista de exames disponíveis e agendar horários das consultas.
+						</p>
+					</div>
+				</div>
 			</div>
-		</div>
-	</main>
-	<section class="formacao bg_white">
-		<div class="container">
-			<h2>Formação & Habilidades</h2>
+		</section>
 
-			<ul>
-				<li>
-					<span>Tecnológo</span>
+		<footer class="footer bg_black2">
+			<div class="container">
+				<a href="index.html"><img src="img/logo-white.svg" /></a>
 
-					<h3>Análise e Desenvolvimento de sistemas</h3>
+				<div class="contato">
+					<h3>Contato</h3>
 
-					<span>2021-2023</span>
-				</li>
+					<ul>
+						<li>(71) 9 8759-8988</li>
+						<li>pericles.contato@hotmail.com</li>
 
-				<li>
-					<span>Curso Livre</span>
+						<li>
+							<ul class="redes-sociais">
+								<li><img src="img/instagram.svg"></li>
+								<li><img src="img/linkedin.svg"></li>
+								<li><img src="img/youtube.svg"></li>
 
-					<h3>Curso de UI/UX Design Avançado</h3>
+							</ul>
+						</li>
+					</ul>
+				</div>
 
-					<span>2022-2022</span>
-				</li>
+				<p>Todos os direitos reservados - 2022.</p>
+			</div>
+		</footer>
 
-				<li>
-					<span>Curso Livre</span>
-
-					<h3>Curso de Javascript / ES6</h3>
-
-					<span>2022-2022</span>
-				</li>
-
-				<li>
-					<span>Curso Livre</span>
-
-					<h3>Curso de React</h3>
-
-					<span>2022-2023</span>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-	<script type="text/javascript" src="js/script.js"></script>
-</body>
-
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
 </html>

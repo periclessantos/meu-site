@@ -15,21 +15,33 @@
 	font-size: 44px;
 	line-height: 44px;
 	color: var(--green);
+	text-transform: uppercase;
 }
 
-.formacao ul {
+.icones {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	gap:  50px;
+	grid-column: 1;
+	margin-top: 150px;
+	}
+
+.cursos {
 	margin-top: 120px;
 }
 
-.formacao li {
+.cursos li {
 	background: var(--white);
 	margin: 30px 0;
 	padding: 10px 20px;
 	border-radius: 4px;
 	position: relative;
+	border: 1px solid #dbdbdb;
 }
 
-.formacao li::before {
+.cursos li::before {
 	content: "";
 	width: 4px;
 	height: 100%;
@@ -39,7 +51,7 @@
 	left: -15px;
 }
 
-.formacao h3 {
+.cursos h3 {
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: 500;
@@ -48,11 +60,23 @@
 	color: var(--bg-3);
 }
 
-.formacao span {
+.cursos span {
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 18px;
 	color: var(--gray);
+}
+
+@media (max-width: 900px){
+	.formacao .container {
+		grid-template-columns: 1fr;
+	}
+
+	.icones{
+		justify-content: center;
+		flex-direction: initial;
+		flex-wrap: wrap;
+	}
 }

@@ -2,7 +2,7 @@
 	background: var(--green);
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #011F0F;
+	color: var(--white);
 	font-family: Poppins;
 	font-style: normal;
 	font-weight: bold;
